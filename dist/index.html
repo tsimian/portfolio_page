@@ -116,22 +116,49 @@
                             </div>
                             <div class="tile-footer tile-1-footer">
                                 <div class="btn-wrapper">
-                                    <!-- <button class="btn source-btn">
+                                    <button class="btn source-btn">
                                         <a 
                                             href="https://github.com/lehmannrobb/meal_planner"
                                             target="_blank"
                                         >
                                             View Code
                                         </a>
-                                    </button> -->
-                                    <button class="btn demo-btn" id="register">
+                                    </button>
+                                    <!-- NO LIVE APP ATM, FINDING HEROKU REPLACEMENT -->
+                                    <!-- <button class="btn demo-btn" id="register">
                                         <a 
                                             href="http://mernmealplanner.herokuapp.com/"
                                             target="_blank"
                                         >
                                             Register
                                         </a>
-                                    </button>
+                                    </button> -->
+                                    <div class="btn demo-btn" id="meal-btn">
+                                        View Demo
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Meal Planner Modal -->
+                        <div class="modal" id="meal-modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4>Meal Planner</h4>
+                                    <div class="close meal-close">&times;</div>
+                                </div>
+                                <div class="modal-body">
+                                    <video width="100%" height="100%" autoplay loop muted playsinline>
+                                        <source src="./assets/meal-planner.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="modal-footer">
+                                    <p> 
+                                        A full-stack MERN CRUD app
+                                        designed to plan meals for the week and store
+                                        recipes.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -328,7 +355,7 @@
                     </li>
                     <li>
                         <a
-                            href="mailto:robb@robblehmann.com"
+                            href="mailto:lehmannrobb@gmail.com"
                         >
                             Email
                         </a>
