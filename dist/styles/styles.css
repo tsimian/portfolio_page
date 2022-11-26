@@ -238,9 +238,10 @@ body.menu-open {
     text-decoration: none;
 }
 
-#register {
+/* NO LIVE APP ATM, SEARCHING FOR HEROKU REPLACEMENT */
+/* #register {
     padding: 1rem 2.75rem;
-}
+} */
 
 /* End projects */
 
