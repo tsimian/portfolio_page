@@ -32,6 +32,25 @@ const overflowHandler = () => {
   }
 };
 
+//// Meal Planner modal
+const mealModal = document.getElementById("meal-modal");
+const mealBtn = document.getElementById("meal-btn");
+const mealClose = document.querySelector(".meal-close");
+
+// Open meal modal
+mealBtn.addEventListener("click", () => {
+  mealModal.style.display = "block";
+  modalOpen = true;
+  overflowHandler();
+});
+
+// Close meal modal
+mealClose.addEventListener("click", () => {
+  mealModal.style.display = "none";
+  modalOpen = false;
+  overflowHandler();
+});
+
 //// Book log modal
 const bookModal = document.getElementById("book-modal");
 const bookBtn = document.getElementById("book-btn");
@@ -91,7 +110,11 @@ pokeClose.addEventListener("click", () => {
 
 // Close all modals on outside click
 window.addEventListener("click", (e) => {
-  if (e.target == bookModal) {
+  if (e.target == mealModal) {
+    mealModal.style.display = "none";
+    modalOpen = false;
+    overflowHandler();
+  } else if (e.target == bookModal) {
     bookModal.style.display = "none";
     modalOpen = false;
     overflowHandler();
